@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://s2-vidadebicho.glbimg.com/bzOcQe63F-TDePlXiAVBbVr_y8c=/0x0:1500x1200/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fb623579cd474803aedbbbbae014af68/internal_photos/bs/2022/F/k/NHUWAuQmAlsB0kkJWcIw/2022-02-22-terrario-hamster-como-montar-o-espaco-perfeito-para-o-meu-pet-vida-de-bicho.jpeg" />
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+
+  <div class="centralizar">
+    <ion-icon name="heart" aria-label="Favorite"></ion-icon>
+  </div>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button id="open-modal" expand="block">Open Sheet Modal</ion-button>
+
+    <ion-modal #modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+      <ng-template>
+        <ion-content>
+          <ion-searchbar placeholder="Search" (click)="modal.setCurrentBreakpoint(0.75)"></ion-searchbar>
+          <ion-list>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://avatars.githubusercontent.com/u/100448388?v=4"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Jéssica</h2>
+                <p>Sales Rep</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://avatars.githubusercontent.com/u/123844183?v=4"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Rebeca</h2>
+                <p>Product Designer</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://avatars.githubusercontent.com/u/119790076?v=4"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Thalita</h2>
+                <p>Director of Operations</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <ion-img src="https://avatars.githubusercontent.com/u/119677479?v=4"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Milene</h2>
+                <p>CEO</p>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-content>
+
+
+  <app-explore-container name="Tab 3 page"></app-explore-container>
+</ion-content>
